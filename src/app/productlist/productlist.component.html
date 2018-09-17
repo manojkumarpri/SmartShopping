@@ -1,0 +1,34 @@
+
+
+<div class="jumbotron">
+    <h1>Cart selected items</h1>     
+     </div>
+ 
+    <div class="table-responsive">
+<table class="table" >
+  <thead>
+    <tr>
+    <th >ID</th>
+      <th >Image</th>
+      <th >Name</th>
+      <th >Price</th>
+      <th >Quantity</th>
+      <th >Long Description</th>
+    <th >Total price</th>
+    </tr></thead>
+    <tbody>
+      <tr   *ngFor="let list of listData" >
+       
+        <td>{{list.id}}</td>
+        <td><img [src]="list.img" class="img-thumbnail" style="height:100px;" />
+        </td><td>{{list.name}}</td>
+        <td>{{list.price}}</td><td>
+  {{list.quantity}}</td>
+  <td>{{list.longDesc}}</td>
+  <td>{{list.total}}</td></tr></tbody>
+  <tfoot>grandTotal:{{gtotal}}</tfoot></table>
+</div>
+
+  <button (click)="cal()">calculate</button>
+  
+  

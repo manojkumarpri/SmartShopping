@@ -1,0 +1,17 @@
+agm-map {
+    height: 500px;
+  }
+  
+  
+  * {
+    font-family: Lato;
+  }
+  
+  a {
+    color: darkblue;
+  }
+  #manoj{
+    background-color: #DADEED;
+    height:100%;
+    width:100%;
+    }
