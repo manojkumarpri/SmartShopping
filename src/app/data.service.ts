@@ -15,7 +15,7 @@ import { NgModule } from '@angular/core';
 })
 export class DataService {
   public result1;id:any
-  API_URL  =  'http://192.168.1.48:3000/';
+  API_URL  =  'http://103.207.1.123:82/';
  public product:any;
   constructor(private  http:  HttpClient) { }
 
