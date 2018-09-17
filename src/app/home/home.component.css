@@ -31,7 +31,31 @@ section {
     margin-top: 10px;
     vertical-align: middle;
   }
+  /* div:hover {    background-color: rgb(147, 236, 129);
+    font-size: 110%;
+     
 
+    
+    
+
+  } */
+    img:hover {
+    width:90%;
+    height:250px; 
+    transition:height width 2s;
+    
+
+  }
+  #cart div:hover{
+    background-color: rgb(147, 236, 129);
+    font-size: 110%;
+
+  }
+  /* div img:hover{
+    width:90%;
+    height:400px; 
+    transition:height width 1s;
+  } */
 /* For popup */
 
   

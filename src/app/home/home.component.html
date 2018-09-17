@@ -14,12 +14,12 @@
   
   <!-- <angular-image-slider [images]="imagesUrl"></angular-image-slider> -->
       <div class="row" style="background-color: aliceblue" > 
-          <div class="col-sm-3 col-lg-3 col-md-3 col-xs-12" style="background-color:White	;" *ngFor="let list of combine | filter:searchTex | map:count/1000;let i of index"  style="background-color:rgb(230, 235, 233);float: left;" >
+          <div class="col-sm-3 col-lg-3 col-md-3 col-xs-12" style="background-color:White	;"id="cart" *ngFor="let list of combine | filter:searchTex | map:count/1000;let i of index"  style="background-color:rgb(230, 235, 233);float: left;" >
           <div class="m-2"style="background-color: AliceBlue	; width: 100%;height: 100%;"> <center><div style="width: 90%;height:90%;">  <h2>{{list.name}}</h2>
           <a (click)="openModalDialog(i)">
-            <img class="img-responsive" [src]="list.img" width="80%" height="350"/>
+            <img class="img-responsive" [src]="list.img" width="80%" height="80%"/>
         
-           <p ><strong>ID:</strong>{{list.Id1}}</p>
+           <!-- <p ><strong>ID:</strong>{{list.Id1}}</p> -->
  
             <p><strong>Price:</strong>{{list.price}} </p>
           <p><strong>Available:</strong>{{list.available}}</p>
