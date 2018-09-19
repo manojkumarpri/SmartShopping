@@ -1,12 +1,13 @@
-section {
+/* section {
   width: 900px; 
   height: 450px;
-}
+} */
+
 .list-items {
     display: flex;
   
     justify-content: center;
-  
+    vertical-align: middle;
     flex-flow: row wrap;
     align-content: flex-end;
   }
@@ -14,6 +15,7 @@ section {
   .list-item {
     margin-left: 10px;
     margin-right: 10px;
+    vertical-align: middle;
   }
   .row {
     display: flex;
@@ -25,6 +27,7 @@ section {
   .column {
     flex: 50%;
     padding: 0 4px;
+    vertical-align: middle;
   }
   
   .column img {
