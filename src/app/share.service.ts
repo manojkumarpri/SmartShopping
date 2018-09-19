@@ -14,7 +14,8 @@ import { NgModule } from '@angular/core';
   providedIn: 'root'
 })
 export class ShareService {
-  API_URL  =  'http://103.207.1.123:82/';
+ API_URL  =  'http://node-api-011.herokuapp.com/';
+  //API_URL  =  'http://localhost:3000/';
  
   constructor(private  http:  HttpClient) { }
   postShop(credentials,type){

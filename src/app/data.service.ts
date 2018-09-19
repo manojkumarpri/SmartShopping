@@ -15,7 +15,8 @@ import { NgModule } from '@angular/core';
 })
 export class DataService {
   public result1;id:any
-  API_URL  =  'http://103.207.1.123:82/';
+  API_URL  =  'http://node-api-011.herokuapp.com/';
+ //API_URL  =  'http://localhost:3000/';
  public product:any;
   constructor(private  http:  HttpClient) { }
 
@@ -73,6 +74,7 @@ getitems(type){
     this.http.get(this.API_URL+type,{headers:headers}).
     subscribe(res=>{
       resolve(res);
+      console.log(res)
     },(err)=>{
       reject(err);
     });

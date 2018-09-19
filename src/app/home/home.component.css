@@ -49,6 +49,7 @@ section {
   #cart div:hover{
     background-color: rgb(147, 236, 129);
     font-size: 110%;
+    height:200px;
 
   }
   /* div img:hover{
